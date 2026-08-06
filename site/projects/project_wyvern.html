@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Wyvern | Sudarshan Shorna Kumar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="brand" href="../index.html">Sudarshan Shorna Kumar</a>
+    <div class="site-menu">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../about.html">About</a>
+        <a class="nav-link current" href="../projects.html">Projects</a>
+      </nav>
+      <div class="nav-social">
+        <a href="mailto:sudarshan.shornakumar@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/sudarshan-shorna-kumar" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/[your-username]" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<main>
+  <section class="project-hero">
+    <div class="wrap">
+      <span class="eyebrow">Monash High Powered Rocketry</span>
+      <h1>Project Wyvern</h1>
+      <p style="max-width:70ch;">Flightline member for all Flight Systems operations on Project Wyvern at the Australian Universities Rocket Competition (AURC) held at White Cliffs, NSW in 2025.</p>
+      <div class="meta-row">
+        <span class="stamp">Flightline</span>
+        <span class="stamp blue">Role: Flight Systems Engineer</span>
+      </div>
+    </div>
+
+    <div class="project-titleblock">
+      <div class="pt-cell"><span class="pt-label">System</span><span class="pt-value">Project Wyvern</span></div>
+      <div class="pt-cell"><span class="pt-label">Tools</span><span class="pt-value">Creo, Pyrotechnic deployment</span></div>
+      <div class="pt-cell"><span class="pt-label">Duration</span><span class="pt-value">5 Months</span></div>
+      <div class="pt-cell"><span class="pt-label">Status</span><span class="pt-value">Project Completed</span></div>
+    </div>
+
+    <div class="wrap">
+      <figure class="hero-figure">
+        <img src="../assets/images/projects/project_wyvern/wyvern_launch.jpg" alt="Launch of Project Wyvern at AURC 2025" data-lightbox>
+        <figcaption>Launch of Project Wyvern at AURC 2025.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Overview</span>
+      <h2>Competition Context</h2>
+      <div class="split-content">
+        <p>Monash HPR had made the decision to enter into the 2025 Australian Universities Rocket Competition with Project Wyvern competing in the 5,000 ft COTS category. Wyvern was the designated rocket that competed in the 2024 AURC which was held at an online level.
+          This competition served as a test for the team's ability to return to competing domestically, and managing multiple large projects simultaneously. Timelining and people-power issues arose, and the team persevered.
+          I was selected as the Flight Systems Engineer for Wyvern's competition launch. This involved managing the mechanical aspects of the avionics bay and ensuring the deployment of parachutes in flight such that the rocket lands with a slow velocity.
+          This role marked my first time being on a deployment flightline, having rewritten checklists for clarity, practiced assembly and building confidence in the months leading up to the competition.</p>
+          <figure>
+            <img src="../assets/images/projects/project_wyvern/wyvern_technical_report.webp" alt="Wyvern Technical Report" data-lightbox>
+            <figcaption>The Technical Report submitted for Project Wyvern.</figcaption>
+          </figure>
+        </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <span class="eyebrow">Design &amp; development</span>
+      <h2>Board design &amp; bring-up</h2>
+      <p style="max-width:none;">I designed the PCB in Altium - a custom HAT carrying a GPS module and IMU, communicating with the Pi over SPI and I2C - then manufactured and am currently bringing up the board: verifying sensor communication, debugging signal integrity, and writing the Python and C/C++ needed for high-velocity object triangulation.</p>
+
+      <div class="figure-pair">
+        <figure>
+          <img src="../assets/images/projects/project_wyvern/wyvern_dep_test.jpg" alt="Wyvern deployment test" data-lightbox>
+          <figcaption>Wyvern's successful deployment test.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/projects/project_wyvern/launch_rail_loading.jpg" alt="Loading onto the launch rail" data-lightbox>
+          <figcaption>Loading onto the launch rail.</figcaption>
+        </figure>
+      </div>
+
+      <div class="callout">
+        <span class="callout-label">Design note</span>
+        <p>[Placeholder - add specifics: which GPS module and IMU, why SPI vs I2C for each, and any signal integrity or power issue you had to debug during bring-up.]</p>
+      </div>
+
+      <h2 style="margin-top:2.4rem;">Triangulation algorithm</h2>
+      <p>[Placeholder - describe the triangulation approach at a level a non-specialist reviewer can follow: what inputs it fuses, what output it produces, and how you're validating it against a known position.]</p>
+      <figure class="hero-figure">
+        <img src="../assets/images/projects/project_wyvern/launch_rail_arming.jpg" alt="Arming the rocket" data-lightbox>
+        <figcaption>Arming the flight computers.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Competition Launch</span>
+      <h2>Launch Outcome</h2>
+      <p style="max-width:none;"> Due to unforeseen circumstances, Project Wyvern did not successfully achieve airframe separation in flight, resulting in no recovery deployment and the rocket hitting the ground at incredible speed.
+        I was part of the recovery team which involved picking up the remains such that a thorough analysis of the flight can be conducted.
+        Currently the rocket is in the team's workshop, having had the damaged parts put together to tell a story and serve as a reminder that rocketry can be challenging.
+        </p>
+      <figure class="hero-figure">
+        <img src="../assets/images/projects/project_wyvern/launch_rail_group.jpg" alt="Pad operations team" data-lightbox>
+        <figcaption>Pad operations team.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <span class="eyebrow">Outcome &amp; reflection</span>
+      <h2>Reflecting on the Project</h2>
+      <div class="split-content">
+        <p>Project Wyvern achieved its goal of ironing out a method that allows for the team to manage multiple large-scale projects successfully. Despite the unsuccessful flight at competition, the team still achieved 2nd place within the category.
+          It also aided in forming more stringent documentation practices and knowledge transfers across team members. Alas, this is rocketry, and we are students figuring it out. The best course of action from here is to learn what we can, and make adjustments to avoid it again in the future - something that is actively achieved by the team.
+          <br> <br>
+          And to my fellow team members who were part of the Away Team, thank you for the lifelong memories and for making this competition experience a fun one.</p>
+        <figure>
+          <img src="../assets/images/projects/project_wyvern/wyvern_away_team.webp" alt="AURC25 Away Team" data-lightbox>
+          <figcaption>The Away Team who made this experience a memorable one.</figcaption>
+        </figure>
+      </div>
+      <a class="back-link" href="../projects.html">&#8592; Back to all projects</a>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      <a href="mailto:sudarshan.shornakumar@gmail.com">sudarshan.shornakumar@gmail.com</a>
+      <a href="https://linkedin.com/in/sudarshan-shorna-kumar" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/[your-username]" target="_blank" rel="noopener">GitHub</a>
+      <a href="../assets/Sudarshan_Shorna_Kumar_Resume.pdf">Resume</a>
+    </div>
+    <div class="footer-meta">
+      <span>&copy; 2026 Sudarshan Shorna Kumar</span>
+      <span>Last revised: [update date]</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ground-Based Tracking (Pi-HAT) | Sudarshan Shorna Kumar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="brand" href="../index.html">Sudarshan Shorna Kumar</a>
+    <div class="site-menu">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../about.html">About</a>
+        <a class="nav-link current" href="../projects.html">Projects</a>
+      </nav>
+      <div class="nav-social">
+        <a href="mailto:sudarshan.shornakumar@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/sudarshan-shorna-kumar" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/[your-username]" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<main>
+  <section class="project-hero">
+    <div class="wrap">
+      <span class="eyebrow">Monash High Powered Rocketry</span>
+      <h1>Big Unilateral Sear Spring System (BUSSS)</h1>
+      <p style="max-width:70ch;">MHPR's first fully mechanical, non-pyrotechnic parachute deployment system — designed to remove black-powder charges from the recovery chain entirely.</p>
+      <div class="meta-row">
+        <span class="stamp">Flight&#8209;tested — 10,000 ft AGL</span>
+        <span class="stamp blue">Role: Lead designer</span>
+      </div>
+    </div>
+
+    <div class="project-titleblock">
+      <div class="pt-cell"><span class="pt-label">System</span><span class="pt-value">Mechanical recovery</span></div>
+      <div class="pt-cell"><span class="pt-label">Tools</span><span class="pt-value">Creo, ANSYS Mechanical, Windchill</span></div>
+      <div class="pt-cell"><span class="pt-label">Duration</span><span class="pt-value">[X months]</span></div>
+      <div class="pt-cell"><span class="pt-label">Status</span><span class="pt-value">Validated &amp; flown</span></div>
+    </div>
+
+    <div class="wrap">
+      <figure class="hero-figure">
+        <img src="../assets/images/projects/busss/busss-hero.svg" alt="Placeholder — BUSSS mounted in the airframe before flight" data-lightbox>
+        <figcaption>Fig. 01 — BUSSS mounted in the airframe, pre-flight. Replace with a real photo.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Overview</span>
+      <h2>Why mechanical, not pyrotechnic</h2>
+      <p>Black-powder recovery charges are the industry-standard way to separate a rocket's airframe at apogee, but they come with real costs: consumables, range-safety paperwork, and a failure mode (a dud charge) that ends the flight badly. I set out to design a fully mechanical alternative for MHPR — a system that stores energy mechanically, releases it on command from the flight computer, and can be reset and re-tested on the bench without burning anything.</p>
+      <p>[Placeholder — add a sentence on how this project came about: was it your idea, a lesson learnt from a previous flight, a team requirement? The cover letter mentions this replaced an unreliable pyrotechnic setup — expand on that story here.]</p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <span class="eyebrow">Design requirements</span>
+      <h2>What the mechanism had to do</h2>
+      <p>Four constraints drove the design: reliably overcome a known retention load, survive flight loads, interface cleanly with the team's SRAD flight computer, and remain testable on the ground without a full flight.</p>
+
+      <div class="req-grid">
+        <div class="req-cell">
+          <img src="../assets/images/projects/busss/busss-force-plot.svg" alt="Placeholder chart — retention force vs travel">
+          <h3>Retention force</h3>
+          <p>Sear and spring sized through iterative FEA to reliably overcome [X] N of retention force before release.</p>
+        </div>
+        <div class="req-cell">
+          <img src="../assets/images/projects/busss/busss-fea.svg" alt="Placeholder — FEA stress plot">
+          <h3>Structural margin</h3>
+          <p>Sear/spring interface checked against flight loads with a minimum safety factor of [X].</p>
+        </div>
+        <div class="req-cell">
+          <img src="../assets/images/projects/busss/busss-dr-slide.svg" alt="Placeholder — design review slide">
+          <h3>Flight computer interface</h3>
+          <p>Actuation trigger commanded by the SRAD flight computer at apogee via barometric altitude detection.</p>
+        </div>
+        <div class="req-cell">
+          <img src="../assets/images/projects/busss/busss-bench-test.svg" alt="Placeholder — bench test setup">
+          <h3>Ground-testability</h3>
+          <p>Manual override retained so the full mechanism can be actuated and reset on the bench, no range required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Design &amp; analysis</span>
+      <h2>Mechanism &amp; CAD</h2>
+      <p>The mechanism uses a linear actuator to trip a spring-loaded sear. Releasing the sear vents a CO2-pressurised piston, which drives a separation ring to break the airframe joint and free the parachute. Everything is sized so the same hardware can be re-cocked and re-fired on the bench between flights.</p>
+
+      <div class="figure-pair">
+        <figure>
+          <img src="../assets/images/projects/busss/busss-cad-iso.svg" alt="Placeholder — CAD isometric of full assembly" data-lightbox>
+          <figcaption>Fig. 02 — Full assembly, isometric view.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/projects/busss/busss-exploded.svg" alt="Placeholder — exploded / cross-section view" data-lightbox>
+          <figcaption>Fig. 03 — Exploded view showing sear, spring and CO2 piston.</figcaption>
+        </figure>
+      </div>
+
+      <div class="callout">
+        <span class="callout-label">Design note</span>
+        <p>[Placeholder — this is a good place for one specific engineering decision and why you made it: e.g. why a unilateral sear over a bilateral one, how you chose the spring rate, or a design iteration that failed and what you changed. Specificity here is what makes this page more convincing than the resume bullet.]</p>
+      </div>
+
+      <h2 style="margin-top:2.4rem;">Structural validation</h2>
+      <p>The sear/spring interface was modelled in ANSYS Mechanical to confirm it would reliably hold under flight loads while still releasing cleanly under actuation. [Placeholder — add a sentence on what the FEA showed: peak stress location, safety factor achieved, any geometry change that resulted from it.]</p>
+      <figure class="hero-figure">
+        <img src="../assets/images/projects/busss/busss-fea.svg" alt="Placeholder — FEA stress plot of sear/spring interface" data-lightbox>
+        <figcaption>Fig. 04 — Stress distribution across the sear/spring interface at maximum load.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <span class="eyebrow">Manufacturing</span>
+      <h2>Build &amp; assembly</h2>
+      <p>[Placeholder — describe how the parts were made: CNC/manual machining, materials used, any tolerances that mattered (e.g. sear engagement surface), and how the CO2 piston and seals were sourced/sealed.]</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Testing &amp; results</span>
+      <h2>From the bench to 10,000 ft</h2>
+      <p>The mechanism went through repeated bench actuation testing before being cleared for flight — confirming reliable release under load, clean separation, and a repeatable reset cycle. It was then flown and successfully deployed at 10,000&nbsp;ft AGL.</p>
+
+      <div class="figure-pair">
+        <figure>
+          <img src="../assets/images/projects/busss/busss-bench-test.svg" alt="Placeholder — bench / ground actuation test" data-lightbox>
+          <figcaption>Fig. 05 — Bench actuation test, mechanism cocked and ready to fire.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/projects/busss/busss-flight-photo.svg" alt="Placeholder — post-flight recovery photo" data-lightbox>
+          <figcaption>Fig. 06 — Post-flight recovery after successful deployment at 10,000 ft AGL.</figcaption>
+        </figure>
+      </div>
+
+      <table class="simple-table">
+        <caption>Test log</caption>
+        <thead><tr><th class="num">Rev</th><th>Test</th><th>Result</th><th>Date</th></tr></thead>
+        <tbody>
+          <tr><td class="num">01</td><td>Bench actuation, unloaded</td><td>[Pass / result]</td><td>[date]</td></tr>
+          <tr><td class="num">02</td><td>Bench actuation, rated load</td><td>[Pass / result]</td><td>[date]</td></tr>
+          <tr><td class="num">03</td><td>Flight deployment, 10,000 ft AGL</td><td>Successful deployment</td><td>[date]</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <span class="eyebrow">Outcome &amp; reflection</span>
+      <h2>What this proved, what's next</h2>
+      <p>Removing pyrotechnics from the recovery chain cut per-flight consumable and range-safety costs, and gave the team a mechanism that can be fully tested before every flight instead of trusted on faith. [Placeholder — add the cost/mass delta vs. the old pyrotechnic system if you have it, e.g. "cutting recovery system cost by $[amount] and mass by [X] g".]</p>
+      <p>[Placeholder — one paragraph on what you'd change next time, or what the next iteration of BUSSS looks like. Friend's site does this well: be honest about what could have been explored further.]</p>
+      <a class="back-link" href="../projects.html">&#8592; Back to all projects</a>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      <a href="mailto:sudarshan.shornakumar@gmail.com">sudarshan.shornakumar@gmail.com</a>
+      <a href="https://linkedin.com/in/sudarshan-shorna-kumar" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/[your-username]" target="_blank" rel="noopener">GitHub</a>
+      <a href="../assets/Sudarshan_Shorna_Kumar_Resume.pdf">Resume</a>
+    </div>
+    <div class="footer-meta">
+      <span>&copy; 2026 Sudarshan Shorna Kumar</span>
+      <span>Last revised: [update date]</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

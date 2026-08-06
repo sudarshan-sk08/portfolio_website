@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<rect width="600" height="600" fill="#E7E9E1"/>
+<rect x="6" y="6" width="588" height="588" fill="none" stroke="#9DA097" stroke-width="1.5" stroke-dasharray="6 5"/>
+<line x1="6" y1="6" x2="594" y2="594" stroke="#9DA097" stroke-width="1"/>
+<line x1="594" y1="6" x2="6" y2="594" stroke="#9DA097" stroke-width="1"/>
+<rect x="10" y="10" width="64" height="20" fill="#D6572B"/>
+<text x="42" y="24" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#EFEFE8" letter-spacing="1">PHOTO</text>
+<text x="300" y="290" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5B5E56">Friends, unplanned</text>
+<text x="300" y="312" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5B5E56"></text>
+<text x="590" y="590" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#9DA097">600x600</text>
+</svg>

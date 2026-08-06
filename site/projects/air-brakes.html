@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ground-Based Tracking (Pi-HAT) | Sudarshan Shorna Kumar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="brand" href="../index.html">Sudarshan Shorna Kumar</a>
+    <div class="site-menu">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../about.html">About</a>
+        <a class="nav-link current" href="../projects.html">Projects</a>
+      </nav>
+      <div class="nav-social">
+        <a href="mailto:sudarshan.shornakumar@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/sudarshan-shorna-kumar" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/[your-username]" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<main>
+  <section class="project-hero">
+    <div class="wrap">
+      <span class="eyebrow">Monash High Powered Rocketry</span>
+      <h1>Air Brakes</h1>
+      <p style="max-width:70ch;">An active drag system that trims apogee by deploying flaps mid-flight — redesigned here for design-for-manufacture and design-for-assembly, not just performance.</p>
+      <div class="meta-row">
+        <span class="stamp">Flight&#8209;tested</span>
+        <span class="stamp blue">Role: Mechanical design lead</span>
+      </div>
+    </div>
+
+    <div class="project-titleblock">
+      <div class="pt-cell"><span class="pt-label">System</span><span class="pt-value">Active apogee control</span></div>
+      <div class="pt-cell"><span class="pt-label">Tools</span><span class="pt-value">CAD, ANSYS Fluent, MATLAB</span></div>
+      <div class="pt-cell"><span class="pt-label">Duration</span><span class="pt-value">[X months]</span></div>
+      <div class="pt-cell"><span class="pt-label">Status</span><span class="pt-value">Validated &amp; flown</span></div>
+    </div>
+
+    <div class="wrap">
+      <figure class="hero-figure">
+        <img src="../assets/images/projects/air-brakes/ab-hero.svg" alt="Placeholder — air brakes sled, fully assembled" data-lightbox>
+        <figcaption>Fig. 01 — Air brakes sled, fully assembled. Replace with a real photo.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Overview</span>
+      <h2>Performance was solved — assembly wasn't</h2>
+      <p>The air brakes system deploys four flaps from the airframe to increase drag and trim the rocket's apogee to a target altitude, controlled by a closed-loop algorithm running on the flight computer. The aerodynamic and control side of the system was already working; my focus was taking the sled itself — the physical thing a teammate has to build, wire and swap batteries on at the range — and redesigning it so it was faster and less error-prone to assemble.</p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <span class="eyebrow">Design requirements</span>
+      <h2>What the redesign had to fix</h2>
+      <div class="req-grid">
+        <div class="req-cell">
+          <img src="../assets/images/projects/air-brakes/ab-harness.svg" alt="Placeholder — wire harness routing detail">
+          <h3>Harness routing</h3>
+          <p>Wire harness pass-through holes repositioned to shorten cable runs and remove awkward routing around structural members.</p>
+        </div>
+        <div class="req-cell">
+          <img src="../assets/images/projects/air-brakes/ab-battery-bay.svg" alt="Placeholder — 18650 2S battery mount">
+          <h3>Battery mounting</h3>
+          <p>Battery bay redesigned to securely hold an 18650 2S pack and allow tool-free swaps during flightline operations.</p>
+        </div>
+        <div class="req-cell">
+          <img src="../assets/images/projects/air-brakes/ab-cad.svg" alt="Placeholder — sled CAD assembly">
+          <h3>Print &amp; material choice</h3>
+          <p>[X] filament selected for 3D-printed structural brackets to improve [layer adhesion / impact resistance] under flight loads.</p>
+        </div>
+        <div class="req-cell">
+          <img src="../assets/images/projects/air-brakes/ab-cfd.svg" alt="Placeholder — CFD drag plot">
+          <h3>Aero performance</h3>
+          <p>Flap geometry and deployment angle validated by CFD to deliver up to 20% of active apogee control.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Design &amp; analysis</span>
+      <h2>Design-for-manufacture &amp; assembly</h2>
+      <p>[Placeholder — walk through the actual before/after of the sled: where the old harness holes were and why they were a problem, where you moved them, and how you decided on the battery bay geometry. This is the "delve deeper" content that isn't on the resume — be specific about the change, not just the result.]</p>
+
+      <div class="figure-pair">
+        <figure>
+          <img src="../assets/images/projects/air-brakes/ab-cad.svg" alt="Placeholder — sled CAD assembly" data-lightbox>
+          <figcaption>Fig. 02 — Sled assembly, CAD render.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/projects/air-brakes/ab-harness.svg" alt="Placeholder — harness routing detail" data-lightbox>
+          <figcaption>Fig. 03 — Wire harness pass-through, before/after comparison.</figcaption>
+        </figure>
+      </div>
+
+      <div class="callout">
+        <span class="callout-label">Impact</span>
+        <p>Repositioning the harness pass-through holes and redesigning the battery bay cut sled assembly time by [X]%. [Placeholder — add how you measured this: timed assembly by a teammate unfamiliar with the sled, comparison against the previous revision, etc.]</p>
+      </div>
+
+      <h2 style="margin-top:2.4rem;">Aerodynamic &amp; control validation</h2>
+      <p>Flap drag coefficient across deployment angle was modelled in ANSYS Fluent, feeding a MATLAB trajectory model used to size the control authority needed to hit target apogee. [Placeholder — add a sentence on what the CFD/MATLAB results actually showed, e.g. achieved apogee error margin.]</p>
+      <figure class="hero-figure">
+        <img src="../assets/images/projects/air-brakes/ab-matlab.svg" alt="Placeholder — MATLAB trajectory / apogee prediction plot" data-lightbox>
+        <figcaption>Fig. 04 — Predicted vs. target apogee across the flap deployment envelope.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <span class="eyebrow">Manufacturing</span>
+      <h2>Build &amp; assembly</h2>
+      <p>[Placeholder — describe the print settings/orientation for the structural brackets, any inserts or fasteners used, and how the sled goes together on the day: order of operations, tools needed, anything that reduced technician error.]</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Testing &amp; results</span>
+      <h2>From the bench to flight</h2>
+      <p>[Placeholder — describe ground testing of flap actuation and any flight results: did the system trim apogee as predicted? Include a specific number if you have one, e.g. "apogee within [X] ft of target".]</p>
+      <table class="simple-table">
+        <caption>Test log</caption>
+        <thead><tr><th class="num">Rev</th><th>Test</th><th>Result</th><th>Date</th></tr></thead>
+        <tbody>
+          <tr><td class="num">01</td><td>Ground actuation test</td><td>[Pass / result]</td><td>[date]</td></tr>
+          <tr><td class="num">02</td><td>Assembly time trial (new vs. old sled)</td><td>[X]% faster</td><td>[date]</td></tr>
+          <tr><td class="num">03</td><td>Flight test — apogee control</td><td>[result]</td><td>[date]</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <span class="eyebrow">Outcome &amp; reflection</span>
+      <h2>What this proved, what's next</h2>
+      <p>[Placeholder — reflect on the outcome: faster, less error-prone assembly at the range, and what you'd change in the next revision — e.g. further reducing part count, or a different battery form factor.]</p>
+      <a class="back-link" href="../projects.html">&#8592; Back to all projects</a>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      <a href="mailto:sudarshan.shornakumar@gmail.com">sudarshan.shornakumar@gmail.com</a>
+      <a href="https://linkedin.com/in/sudarshan-shorna-kumar" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/[your-username]" target="_blank" rel="noopener">GitHub</a>
+      <a href="../assets/Sudarshan_Shorna_Kumar_Resume.pdf">Resume</a>
+    </div>
+    <div class="footer-meta">
+      <span>&copy; 2026 Sudarshan Shorna Kumar</span>
+      <span>Last revised: [update date]</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
